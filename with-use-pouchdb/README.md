@@ -2,6 +2,10 @@
 
 This example shows how to use PouchDB with Next.js.
 
+## Demo
+
+https://with-use-pouchdb.vercel.app/
+
 ## Install
 
     $ yarn
