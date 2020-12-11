@@ -1,6 +1,8 @@
 import { useFind, usePouch } from "use-pouchdb";
+import useOffline from "../hooks/useOffline";
 
 export default function IndexPage() {
+  const offline = useOffline();
   const { post } = (global.db = usePouch());
 
   const handleSubmit = (event) => {
@@ -12,6 +14,8 @@ export default function IndexPage() {
 
   return (
     <>
+      <div>You are {offline ? "offline" : "online"}</div>
+
       <form onSubmit={handleSubmit}>
         <input name="label" type="text" />
         <button>Add</button>
