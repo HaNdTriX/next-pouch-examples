@@ -1,0 +1,6 @@
+todos
+.next
+node_modules
+yarn.lock
+**/public/workbox-*.js
+**/public/sw.js
